@@ -6,7 +6,7 @@
 
 1. [Python](https://www.python.org/) >= 3.x installed
 
-## Initialization Step-by-Step
+## Initialization
 
 1. Clone the repository
 2. Open your command prompt in the repository directory
@@ -20,6 +20,17 @@
 7. To apply the models use the command: `py manage.py makemigrations`
 8. Then to sincronyze with the database use: `py manage.py migrate`
 9. Now just start the server using: `py manage.py runserver`
+
+## Create an admin user
+
+1. Create the user using: `py manage.py createsuperuser`
+2. Enter with any username
+   `Username: admin`
+3. You will then be prompted for your desired email address:
+   `Email address: admin@example.com`
+4. he final step is to enter your password. You will be asked to enter your password twice, the second time as a confirmation of the first.
+   `Password: ********** Password (again): ********* Superuser created successfully.`
+5. Start the server and go to http://127.0.0.1:8000/admin/
 
 ## Documentation
 
