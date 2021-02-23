@@ -30,8 +30,8 @@
    `Email address: admin@example.com`
 4. he final step is to enter your password. You will be asked to enter your password twice, the second time as a confirmation of the first.
    ```
-   Password: ********** 
-   Password (again): ********* 
+   Password: **********
+   Password (again): *********
    Superuser created successfully.
    ```
 5. Start the server and go to http://127.0.0.1:8000/admin/
@@ -40,5 +40,6 @@
 
 - [PEP 405 -- Python Virtual Environments](https://www.python.org/dev/peps/pep-0405/)
 - [Django Intro](https://docs.djangoproject.com/en/3.1/intro/)
+- [FAQ](https://docs.djangoproject.com/en/3.1/faq/help/)
 
 ---
