@@ -29,7 +29,11 @@
 3. You will then be prompted for your desired email address:
    `Email address: admin@example.com`
 4. he final step is to enter your password. You will be asked to enter your password twice, the second time as a confirmation of the first.
-   `Password: ********** Password (again): ********* Superuser created successfully.`
+   ```
+   Password: ********** 
+   Password (again): ********* 
+   Superuser created successfully.
+   ```
 5. Start the server and go to http://127.0.0.1:8000/admin/
 
 ## Documentation
