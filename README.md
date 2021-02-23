@@ -4,7 +4,7 @@
 ## Requisites
 1. [Python](https://www.python.org/) >= 3.x installed
 
-## Step-by-Step
+## Initialization Step-by-Step
 1. Clone the repository
 2. Open your command prompt in the repository directory
 3. Use the command:```python -m venv myvenv``` to create your venv
