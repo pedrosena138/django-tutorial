@@ -17,8 +17,9 @@ def create_question(question_text, days):
     """
 
     time = timezone.now() + datetime.timedelta(days=days)
-
     query = Question.objects.create(question_text=question_text, pub_date=time)
+
+    return query
 
 
 # ============== VIEWS ==============
@@ -97,7 +98,7 @@ class QuestionDetailViewTests(TestCase):
         """
         future_question = create_question(
             question_text='Future question.', days=5)
-        url = reverse('polls:detail', args == (future_question.id,))
+        url = reverse('polls:detail', args=(future_question.id,))
         response = self.client.get(url)
         self.assertEqual(response.status_code, 404)
 
@@ -107,10 +108,10 @@ class QuestionDetailViewTests(TestCase):
         displays the question's text.
         """
         past_question = create_question(
-            question_text='Past question.', days=-5)
-        url = reverse('polls:detail', args == (past_question.id,))
+            question_text='Past Question.', days=-5)
+        url = reverse('polls:detail', args=(past_question.id,))
         response = self.client.get(url)
-        self.assertEqual(response, past_question.question_text)
+        self.assertContains(response, past_question.question_text)
 
 
 # ============== MODELS ==============
