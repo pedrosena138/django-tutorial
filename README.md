@@ -2,6 +2,7 @@
 
 > Simple poll vote web page
 
+![logo](images/background.png)
 ## Requisites
 
 1. [Python](https://www.python.org/) >= 3.x installed
