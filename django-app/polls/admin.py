@@ -5,11 +5,17 @@ from .models import Question, Choice
 
 
 class QuestionAdmin(admin.ModelAdmin):
-    fields = ['pub_date', 'question_text']
+    fieldsets = [
+        (None, {'fields': ['question_text']}),
+        ('Date Information', {'fields': ['pub_date']}),
+    ]
 
 
 class ChoiceAdmin(admin.ModelAdmin):
-    fields = ['question', 'choice_text', 'votes']
+    fieldsets = [
+        (None, {'fields': ['question']}),
+        ('Choice Information', {'fields': ['choice_text', 'votes']}),
+    ]
 
 
 admin.site.register(Question, QuestionAdmin)
