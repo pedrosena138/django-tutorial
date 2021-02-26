@@ -1,4 +1,4 @@
-# First Django App (Work in Progress)
+# First Django App
 
 > Simple poll vote web page
 
